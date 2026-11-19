@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS medibook;
+
+USE medibook;
+
+CREATE TABLE patients (
+    patient_id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(150) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(12) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT uq_patients_email UNIQUE (email),
+    CONSTRAINT chk_patients_phone CHECK (phone REGEXP '^[0-9]{12}$')
+) ENGINE = InnoDB;
