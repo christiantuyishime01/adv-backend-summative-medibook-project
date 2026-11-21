@@ -4,12 +4,12 @@ INSERT INTO patients (patient_id, full_name, email, phone)
 VALUES
 (1, 'Joshua Smith', 'josh.smith@gmail.com', '233244111222'),
 (2, 'Collins Johnson', 'coll.johnson@gmail.com', '233555333444'),
-(3, 'Esther Asante', 'essy.asante@gmail.com', '233501234567');
+(3, 'Esther Asante', 'essy.asante@gmail.com', '233501234567'),
 (4, 'Michael Black', 'mich.black@gmail.com', '233201000004'),
 (5, 'Sarah Williams', 'sarah.willy@gmail.com', '233202000005'),
 (6, 'Cedrick Iradukunda', 'ced.iradukunda@gmail.com', '233203080006'),
 (7, 'Alice Uwase', 'ally.uwase@gmail.com', '233204000007'),
-(8, 'Samuel Niyonsaba', 'sam.niyonsaba@gmail.com', '233205000008');
+(8, 'Samuel Niyonsaba', 'sam.niyonsaba@gmail.com', '233205000008'),
 (9, 'Grace Mukamana', 'grace.mukamana@gmail.com', '233206000009'),
 (10, 'David Habimana', 'david.habimana@gmail.com', '233207000010'),
 (11, 'Linda Uwimana', 'linda.uwimana@gmail.com', '233208000011');
