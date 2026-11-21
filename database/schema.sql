@@ -12,3 +12,14 @@ CREATE TABLE patients (
     CONSTRAINT uq_patients_email UNIQUE (email),
     CONSTRAINT chk_patients_phone CHECK (phone REGEXP '^[0-9]{12}$')
 ) ENGINE = InnoDB;
+
+CREATE TABLE doctors (
+    doctor_id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(150) NOT NULL,
+    specialty VARCHAR(100) NOT NULL,
+    consultation_fee DECIMAL(10, 2) NOT NULL,
+    room VARCHAR(20) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT chk_doctors_consultation_fee CHECK (consultation_fee >= 0)
+) ENGINE = InnoDB;
