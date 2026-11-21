@@ -18,7 +18,7 @@ INSERT INTO doctors (doctor_id, full_name, specialty, consultation_fee, room)
 VALUES
 (1, 'Dr. Ivan', 'Dermatology', 150.00,'R-12'),
 (2, 'Dr. Kevine', 'Paediatrics', 100.00, 'R-03'),
-(3, 'Dr. Maza', 'Cardiology', 175.00, 'R-08');
+(3, 'Dr. Maza', 'Cardiology', 175.00, 'R-09');
 
 INSERT INTO appointments (patient_id, doctor_id, appointment_datetime, amount_paid)
 VALUES
